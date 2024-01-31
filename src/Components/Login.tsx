@@ -18,7 +18,7 @@ function App() {
             <div className="text-center">
               <img src="https://img.myloview.com/posters/dating-app-icon-dating-app-logo-love-icon-love-logo-design-vector-700-194380654.jpg"
                 style={{width: '185px'}} alt="logo" />
-              <h4 className="mt-1 mb-5 pb-1">We are The Lotus Team</h4>
+              <h4 className="mt-1 mb-5 pb-1">We are The MatchMate Team</h4>
             </div>
 
             <p>Please login to your account</p>
