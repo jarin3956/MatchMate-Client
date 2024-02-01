@@ -9,6 +9,8 @@ import {
 import { AxiosResponse } from "axios";
 import { axiosinstance } from "../Axios/Axios";
 import "../login.css";
+  
+import { useNavigate } from "react-router-dom";
 
 interface UserData {
   name: string;
@@ -40,6 +42,8 @@ function Register() {
   }
 
   const { name, email, age, password, repassword } = userData;
+
+  const navigate = useNavigate()
 
   return (
     <MDBContainer className="my-1 gradient-form">
@@ -116,7 +120,7 @@ function Register() {
             </div>
             <div className="d-flex flex-row align-items-center justify-content-center pb-4 mb-2">
               <p className="mb-0">Already have an account?</p>
-              <MDBBtn outline className="mx-2" color="danger">
+              <MDBBtn outline className="mx-2" color="danger" onClick={()=>navigate('/login')}>
                 Login
               </MDBBtn>
             </div>

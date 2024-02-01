@@ -7,18 +7,19 @@ import {
 } from 'mdb-react-ui-kit';
 import './login.css'
 // import {axiosinstance} from './Axios/Axios';
+import { useNavigate } from 'react-router-dom';
 
 
 
 
 function Login() {
-
+const navigate = useNavigate();
   return (
     <MDBContainer className="my-5 gradient-form">
 
       <MDBRow>
 
-        <MDBCol col='6' className="mb-5">
+        <MDBCol col='6' className="mb-2">
           <div className="d-flex flex-column ms-5">
 
             <div className="text-center">
@@ -41,7 +42,7 @@ function Login() {
 
             <div className="d-flex flex-row align-items-center justify-content-center pb-4 mb-4">
               <p className="mb-0">Don't have an account?</p>
-              <MDBBtn outline className='mx-2' color='danger'>
+              <MDBBtn outline className='mx-2' color='danger' onClick={()=>navigate('/register')}>
                 Register
               </MDBBtn>
             </div>
