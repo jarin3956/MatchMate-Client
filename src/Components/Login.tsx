@@ -6,7 +6,7 @@ import {
   MDBInput
 } from 'mdb-react-ui-kit';
 import './login.css'
-// import {axiosinstance} from './Axios/Axios';
+
 import { useNavigate } from 'react-router-dom';
 
 
