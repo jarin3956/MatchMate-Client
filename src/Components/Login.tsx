@@ -6,25 +6,24 @@ import {
   MDBInput
 } from 'mdb-react-ui-kit';
 import './login.css'
-// import {axiosinstance} from './Axios/Axios';
 
-
+import { useNavigate } from 'react-router-dom';
 
 
 function Login() {
-
+const navigate = useNavigate();
   return (
     <MDBContainer className="my-5 gradient-form">
 
       <MDBRow>
 
-        <MDBCol col='6' className="mb-5">
+        <MDBCol col='6' className="mb-2">
           <div className="d-flex flex-column ms-5">
 
             <div className="text-center">
               <img src="https://img.myloview.com/posters/dating-app-icon-dating-app-logo-love-icon-love-logo-design-vector-700-194380654.jpg"
                 style={{width: '185px'}} alt="logo" />
-              <h4 className="mt-1 mb-5 pb-1">We are The MatchMate Team</h4>
+              <h4 className="mt-1 mb-5 pb-1">We are The MatchMate Team hello</h4>
             </div>
 
             <p>Please login to your account</p>
@@ -41,7 +40,7 @@ function Login() {
 
             <div className="d-flex flex-row align-items-center justify-content-center pb-4 mb-4">
               <p className="mb-0">Don't have an account?</p>
-              <MDBBtn outline className='mx-2' color='danger'>
+              <MDBBtn outline className='mx-2' color='danger' onClick={()=>navigate('/register')}>
                 Register
               </MDBBtn>
             </div>
