@@ -1,8 +1,4 @@
 
-body{
-overflow: hidden;
-}
-
 .gradient-custom-2 {
     /* fallback for old browsers */
     background: #fccb90;
@@ -26,3 +22,6 @@ overflow: hidden;
     }
   }
 
+  body{
+    overflow: hidden;
+  }
