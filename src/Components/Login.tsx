@@ -5,8 +5,14 @@ import {
   MDBCol,
   MDBInput
 } from 'mdb-react-ui-kit';
+import './login.css'
+// import {axiosinstance} from './Axios/Axios';
 
-function App() {
+
+
+
+function Login() {
+
   return (
     <MDBContainer className="my-5 gradient-form">
 
@@ -65,4 +71,4 @@ function App() {
   );
 }
 
-export default App;
+export default Login;
